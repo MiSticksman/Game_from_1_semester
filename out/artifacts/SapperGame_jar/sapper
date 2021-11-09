@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CD=$(dirname "$(readlink -f "$0")")  # "
+nohup java -jar "$CD/SapperGame.jar" "$@" >/dev/null 2>&1 &
